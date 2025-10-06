@@ -14,31 +14,61 @@ public class main : MonoBehaviour
         SettingMenu,
         Volume,
         Credit,
-        Back;
+        Back,
+        Close;
+
+    int BackMenu = 0;
 
     public void MenuTagButton()
     {
         Menu.SetActive(true);
+        Close.SetActive(true);
         MenuTag.SetActive(false);
     }
 
     public void TouchButton()
     {
+        Menu.SetActive(false);
+        Close.SetActive(false);
         TouchMenu.SetActive(true);
         Back.SetActive(true);
-        Menu.SetActive(false);
+        BackMenu = 1;
     }
 
     public void SettingButton()
     {
+        Menu.SetActive(false);
+        Close.SetActive(false);
         SettingMenu.SetActive(true);
         Back.SetActive(true);
-        Menu.SetActive(false);
+        BackMenu = 2;
     }
 
     public void BackButton()
     {
-        Menu.SetActive(true);
+        if (BackMenu == 1)
+        {
+            TouchMenu.SetActive(false);
+            Back.SetActive(false);
+            Close.SetActive(false);
+            Menu.SetActive(true);
+            Close.SetActive(true);
+        }
+        else if (BackMenu == 2)
+        {
+            SettingMenu.SetActive(false);
+            Back.SetActive(false);
+            Close.SetActive(false);
+            Menu.SetActive(true);
+            Close.SetActive(true);
+        }
+    }
+
+    public void CloseButton()
+    {
+        Menu.SetActive(false);
+        Close.SetActive(false);
+        MenuTag.SetActive(true);
     }
 
     public void CaressButton()
