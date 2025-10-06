@@ -2622,6 +2622,7 @@ MonoBehaviour:
   Volume: {fileID: 260839797}
   Credit: {fileID: 617266500}
   Back: {fileID: 446946839}
+<<<<<<< Updated upstream
   Close: {fileID: 1724368805}
 --- !u!1 &1287410850
 GameObject:
@@ -2707,6 +2708,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1338500440
 GameObject:
   m_ObjectHideFlags: 0
@@ -3659,4 +3662,3 @@ SceneRoots:
   - {fileID: 1858006450}
   - {fileID: 1256072009}
   - {fileID: 1284057383}
-  - {fileID: 1287410852}
