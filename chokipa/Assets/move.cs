@@ -12,6 +12,8 @@ public class move : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUp
     public Image ikariIcon; // Inspectorで右上Imageをセット
 
     private Image img;
+    private bool ikariIconActive = false; // 表示中フラグ
+    private int ikariIconCount = 0;       // 表示回数
 
     void Awake()
     {
@@ -31,21 +33,29 @@ public class move : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUp
     public void OnPointerDown(PointerEventData eventData)
     {
         img.sprite = pressedSprite; // クリック中の画像に変更
-        StartCoroutine(DelayToOther(10.0f)); // 10秒後にotherSpriteへ
-        StartCoroutine(DelayShowIkariIcon(10.0f,10.0f)); // 10秒後に10秒だけ表示
+        if (!ikariIconActive) // 表示中でなければコルーチン開始
+        {
+            ikariIconActive = true; // コルーチン開始時にtrue
+            StartCoroutine(DelayShowIkariIcon(8.0f, 10.0f)); // 10秒後に10秒だけ表示
+        }
+        StartCoroutine(DelayToOther(8.0f)); // 10秒後にotherSpriteへ
     }
 
     // 10秒待ってからアイコンを表示し、さらにsec秒後に非表示
     private IEnumerator DelayShowIkariIcon(float delay, float sec)
     {
-        yield return new WaitForSeconds(delay); // まずdelay秒待つ
-        ikariIcon.gameObject.SetActive(true);   // 表示
-        yield return new WaitForSeconds(sec);   // sec秒待つ
-        ikariIcon.gameObject.SetActive(false);  // 非表示
+        yield return new WaitForSeconds(delay);
+        ikariIcon.gameObject.SetActive(true);
+        ikariIconCount++; // 表示回数カウント
+        Debug.Log($"{ikariIconCount}回"); // コンソールに回数表示
+        yield return new WaitForSeconds(sec);
+        ikariIcon.gameObject.SetActive(false);
+        ikariIconActive = false; // 完全に終わった時だけfalseに戻す
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        ikariIcon.gameObject.SetActive(false); // 離した瞬間に非表示
         StartCoroutine(ShowOtherSpriteForSeconds(0.5f));
     }
 
@@ -77,5 +87,8 @@ public class move : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUp
         {
             transform.localScale = Vector3.one; // 元のサイズにリセット
         }
+
+        // デバッグ用：表示回数を確認
+        // Debug.Log("怒りアイコン表示回数: " + ikariIconCount);
     }
 }
