@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Touch.unity
     guid: 57b85421da855cf4684cafd6c90b586c
+  - enabled: 1
+    path: Assets/Scenes/title.unity
+    guid: 549ad16f686ba484b89bd6c60d18a4d4
+  - enabled: 1
+    path: Assets/Scenes/MainGame.unity
+    guid: aa9753ccd7d8a6d46b31012804c793d8
   m_configObjects: {}
