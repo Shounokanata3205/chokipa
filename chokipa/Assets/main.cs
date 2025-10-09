@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class main : MonoBehaviour
 {
@@ -9,15 +11,24 @@ public class main : MonoBehaviour
         Touch,
         Setting,
         TouchMenu,
-        Caress,
-        TakeOut,
         SettingMenu,
-        Volume,
-        Credit,
         Back,
         Close;
 
+    [SerializeField]
+    TextMeshProUGUI Money,
+        Time;
+
     int BackMenu = 0;
+    int hour = System.DateTime.Now.Hour;
+    int minute = System.DateTime.Now.Minute;
+
+    public void Update()
+    {
+
+        Time.text = hour + ":" + minute;
+        Money.text = "GameOver";
+    }
 
     public void MenuTagButton()
     {
@@ -69,25 +80,5 @@ public class main : MonoBehaviour
         Menu.SetActive(false);
         Close.SetActive(false);
         MenuTag.SetActive(true);
-    }
-
-    public void CaressButton()
-    {
-        //SettingMenu.SetActive(false);
-    }
-
-    public void TakeOutButton()
-    {
-        //SettingMenu.SetActive(false);
-    }
-
-    public void VolumeButton()
-    {
-        //SettingMenu.SetActive(false);
-    }
-
-    public void CreditButton()
-    {
-        //SettingMenu.SetActive(false);
     }
 }
