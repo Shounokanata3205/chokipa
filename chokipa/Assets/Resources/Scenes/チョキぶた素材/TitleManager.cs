@@ -30,7 +30,7 @@ public class TitleManager : MonoBehaviour
 
 void SceneToMain()
     {
-        SceneManager.LoadScene("MainGame");
+        SceneManager.LoadScene("Load");
     }
     void SceneToEnd()
     {
