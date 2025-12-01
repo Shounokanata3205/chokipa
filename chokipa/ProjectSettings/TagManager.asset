@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - UI2
+  - UI3
   - 
   - 
   - 
@@ -43,4 +44,28 @@ TagManager:
     locked: 0
   - name: New Layer 1
     uniqueID: 1130596999
+    locked: 0
+  - name: New Layer 2
+    uniqueID: 3006354935
+    locked: 0
+  - name: New Layer 3
+    uniqueID: 1113021179
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 736153065
+    locked: 0
+  - name: New Layer 5
+    uniqueID: 2684293261
+    locked: 0
+  - name: New Layer 6
+    uniqueID: 2617928141
+    locked: 0
+  - name: New Layer 7
+    uniqueID: 1249739643
+    locked: 0
+  - name: New Layer 8
+    uniqueID: 1651485901
+    locked: 0
+  - name: New Layer 9
+    uniqueID: 2029996933
     locked: 0
