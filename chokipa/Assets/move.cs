@@ -9,19 +9,14 @@ public class move : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUp
     public Sprite pressedSprite;
     public Sprite otherSprite;
 
-    public Image ikariIcon;
-
     private Image img;
-    private bool ikariIconActive = false;
-    private int ikariIconCount = 0;
 
     void Awake()
     {
         img = GetComponent<Image>();
-        img.sprite = normalSprite;
-        if (ikariIcon != null)
+        if (img != null)
         {
-            ikariIcon.gameObject.SetActive(false);
+            img.sprite = normalSprite;
         }
     }
 
@@ -32,43 +27,26 @@ public class move : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUp
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        img.sprite = pressedSprite;
-        if (!ikariIconActive)
-        {
-            ikariIconActive = true;
-            StartCoroutine(DelayShowIkariIcon(8.0f, 10.0f));
-        }
-        StartCoroutine(DelayToOther(8.0f));
-    }
-
-    private IEnumerator DelayShowIkariIcon(float delay, float sec)
-    {
-        yield return new WaitForSeconds(delay);
-        ikariIcon.gameObject.SetActive(true);
-        ikariIconCount++;
-        Debug.Log($"{ikariIconCount}回");
-        yield return new WaitForSeconds(sec);
-        ikariIcon.gameObject.SetActive(false);
-        ikariIconActive = false;
+        if (img != null) img.sprite = pressedSprite;
+        StartCoroutine(DelayToOther(8.0f)); // 8秒後に otherSprite に切り替え
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        ikariIcon.gameObject.SetActive(false);
-        StartCoroutine(ShowOtherSpriteForSeconds(0.5f));
+        StartCoroutine(ShowOtherSpriteForSeconds(0.5f)); // 離したら一時的に otherSprite を表示
     }
 
     private IEnumerator ShowOtherSpriteForSeconds(float sec)
     {
-        img.sprite = otherSprite;
+        if (img != null) img.sprite = otherSprite;
         yield return new WaitForSeconds(sec);
-        img.sprite = normalSprite;
+        if (img != null) img.sprite = normalSprite;
     }
 
     private IEnumerator DelayToOther(float sec)
     {
         yield return new WaitForSeconds(sec);
-        img.sprite = otherSprite;
+        if (img != null) img.sprite = otherSprite;
     }
 
     void Update()
