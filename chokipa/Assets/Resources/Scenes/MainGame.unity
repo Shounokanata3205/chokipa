@@ -270,9 +270,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 811051209}
+      - m_Target: {fileID: 811051208}
         m_TargetAssemblyTypeName: main, Assembly-CSharp
-        m_MethodName: CreditButton
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2375,6 +2375,7 @@ MonoBehaviour:
   Touch: {fileID: 94425623}
   Setting: {fileID: 596537150}
   TouchMenu: {fileID: 1325601513}
+  Caress: {fileID: 0}
   SettingMenu: {fileID: 147621282}
   Back: {fileID: 641888021}
   Close: {fileID: 751007865}
@@ -2701,9 +2702,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 811051209}
+      - m_Target: {fileID: 811051208}
         m_TargetAssemblyTypeName: main, Assembly-CSharp
-        m_MethodName: TakeOutButton
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8022,9 +8023,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 811051209}
+      - m_Target: {fileID: 811051208}
         m_TargetAssemblyTypeName: main, Assembly-CSharp
-        m_MethodName: CaressButton
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8439,9 +8440,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 811051209}
+      - m_Target: {fileID: 811051208}
         m_TargetAssemblyTypeName: main, Assembly-CSharp
-        m_MethodName: VolumeButton
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
