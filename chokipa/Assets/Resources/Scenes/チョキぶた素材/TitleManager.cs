@@ -34,10 +34,10 @@ void SceneToMain()
     }
     void SceneToEnd()
     {
-        SceneManager.LoadScene("End");
+        SceneManager.LoadScene("room");
     }
     void SceneToTitle()
     {
-        SceneManager.LoadScene("title");
+        SceneManager.LoadScene("free");
     }
 }
