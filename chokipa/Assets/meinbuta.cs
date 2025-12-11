@@ -1,56 +1,60 @@
 using UnityEngine;
 using TMPro;
 
+
 public class ClickRandomImage : MonoBehaviour
 {
-    public GameObject[] clickImages; // ランダム表示する画像
-    public float showTime = 0.1f;    // 表示時間
+    public GameObject[] clickImages; 
+    public float showTime = 0.1f;
 
-    private bool isShowing = false;  // 今表示中かどうか
+    private bool isShowing = false;
 
-    public TextMeshProUGUI messageText;  // 表示するテキスト
+    public TextMeshProUGUI messageText;
 
     private string[] messages = {
         "  ぶひっ ",
         "  ぷごっ ",
         "  ぶりっ ",
         "  ぷぎっ ",
-
     };
-
     void Start()
     {
         foreach (var img in clickImages)
             img.SetActive(false);
+
+        if (messageText == null)
+            messageText = GameObject.Find("MessageText").GetComponent<TextMeshProUGUI>();
+
+        messageText.gameObject.SetActive(false);
     }
+
 
     void OnMouseDown()
     {
-        // 表示中ならクリック無視
         if (isShowing) return;
 
-        // ランダムメッセージ表示
-        ShowRandomMessage();
-
-        // ランダム画像表示
-        StartCoroutine(ShowRandomImage());
+        StartCoroutine(ShowEffect());
     }
 
-    private System.Collections.IEnumerator ShowRandomImage()
+    private System.Collections.IEnumerator ShowEffect()
     {
         isShowing = true;
 
-        int index = Random.Range(0, clickImages.Length);
+        // ランダム画像
+        int idx = Random.Range(0, clickImages.Length);
+        clickImages[idx].SetActive(true);
 
-        clickImages[index].SetActive(true);
+        // ランダムメッセージ
+        messageText.text = messages[Random.Range(0, messages.Length)];
+        messageText.gameObject.SetActive(true);
+
+        // showTimeだけ表示
         yield return new WaitForSeconds(showTime);
-        clickImages[index].SetActive(false);
+
+        // 消す
+        clickImages[idx].SetActive(false);
+        messageText.gameObject.SetActive(false);
 
         isShowing = false;
-    }
-
-    private void ShowRandomMessage()
-    {
-        messageText.text = messages[Random.Range(0, messages.Length)];
     }
 }
