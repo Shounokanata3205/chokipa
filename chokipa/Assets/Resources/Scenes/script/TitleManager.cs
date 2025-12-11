@@ -27,6 +27,14 @@ public class TitleManager : MonoBehaviour
     {
         FadeManager.Instance.FadeOutToIn(SceneToTitle);
     }
+    public void OnTransitionToFree()
+    {
+        FadeManager.Instance.FadeOutToIn(SceneToFree);
+    }
+     public void OnTransitionToCoin()
+    {
+        FadeManager.Instance.FadeOutToIn(SceneToCoin);
+    }
 
 void SceneToMain()
     {
@@ -38,6 +46,14 @@ void SceneToMain()
     }
     void SceneToTitle()
     {
+        SceneManager.LoadScene("title");
+    }
+    void SceneToFree()
+    {
         SceneManager.LoadScene("free");
+    }
+    void SceneToCoin()
+    {
+        SceneManager.LoadScene("Coin");
     }
 }
