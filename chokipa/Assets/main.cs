@@ -17,18 +17,23 @@ public class main : MonoBehaviour
         Close;
 
     [SerializeField]
-    TextMeshProUGUI Money,
-        Time;
-
+    TextMeshProUGUI Time,
+        Money;
+    int Coin = 9999;
     int BackMenu = 0;
     int hour = System.DateTime.Now.Hour;
     int minute = System.DateTime.Now.Minute;
 
     public void Update()
     {
-
+        int hour = System.DateTime.Now.Hour;
+        int minute = System.DateTime.Now.Minute;
+        if (minute <= 9)
+        {
+            Time.text = hour + ":0" + minute;
+        }
         Time.text = hour + ":" + minute;
-        Money.text =  ":" + Money;
+        Money.SetText("{0}", Coin);
     }
 
     public void MenuTagButton()
