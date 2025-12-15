@@ -50,10 +50,10 @@ void SceneToMain()
     }
     void SceneToFree()
     {
-        SceneManager.LoadScene("free");
+        SceneManager.LoadScene("Touch");
     }
     void SceneToCoin()
     {
-        SceneManager.LoadScene("Coin");
+        SceneManager.LoadScene("MiniGame");
     }
 }

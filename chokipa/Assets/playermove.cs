@@ -13,8 +13,8 @@ public class PlayerMove : MonoBehaviour
 
         transform.position = new Vector2(
         //移動範囲を制限する
-        Mathf.Clamp(transform.position.x + moveX, 30.0f, 300.0f),
-        Mathf.Clamp(transform.position.y + moveY, 10.0f, 550.0f)  
+        Mathf.Clamp(transform.position.x + moveX, 30.0f, 450.0f),
+        Mathf.Clamp(transform.position.y + moveY, 10.0f, 860.0f)  
         );
     }
 }
