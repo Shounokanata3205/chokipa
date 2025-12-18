@@ -7562,7 +7562,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.8311, y: -0.2603, z: 0}
-  m_LocalScale: {x: 1.2327662, y: 2.6373422, z: 1}
+  m_LocalScale: {x: 1.81833, y: 4.648316, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -8468,7 +8468,7 @@ RectTransform:
   m_GameObject: {fileID: 1336975291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1609375, y: 0.1609375, z: 0.1609375}
+  m_LocalScale: {x: 0.1828125, y: 0.1828125, z: 0.1828125}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 947050582}
@@ -8485,7 +8485,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 3407.9998}
+  m_SizeDelta: {x: 1920, y: 3408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1336975293
 MonoBehaviour:
@@ -9287,9 +9287,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.056250006
+    y: 0.0007812679
     width: 1
-    height: 0.8875
+    height: 0.99843746
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -10011,7 +10011,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bffbe8203e9da584daa971edb155b93b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 033c97e3a0460e84ea4c77427a3f05cb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

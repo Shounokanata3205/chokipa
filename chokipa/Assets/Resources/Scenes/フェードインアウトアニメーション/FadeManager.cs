@@ -31,6 +31,7 @@ public class FadeManager : MonoBehaviour
     {
         CanvasGroup.DOFade(0, 1.5f);
     }
+    //暗くなる
     public void FadeOut()
     {
         CanvasGroup.DOFade(1, 1.5f);
