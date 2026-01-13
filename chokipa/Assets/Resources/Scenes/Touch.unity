@@ -5295,7 +5295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u306A\u304C\u304A\u3057\u3067\u3001\u3061\u3087\u304D\u3076\u305F\u3092\n\u3082\u3061\u3042\u3052\u3066\u307F\u3088\u3046!"
+  m_text: "\u306A\u304C\u304A\u3057\u3067\u3001\u3061\u3087\u304D\u3076\u305F\u3092\n\u3082\u3061\u3042\u3052\u3066\u307F\u3088\u3046!\n\u3044\u3063\u3071\u3044\u30BF\u30C3\u30D7\u3059\u308B\u3068\n\u3088\u308D\u3053\u3076\u3088!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e8a9f6ee077592649ab6bd54bfb5bc7e, type: 2}
   m_sharedMaterial: {fileID: 850208679411759747, guid: e8a9f6ee077592649ab6bd54bfb5bc7e, type: 2}
@@ -7347,7 +7347,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 7.1, y: 7.1, z: 7.1}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1563403234}
   m_Father: {fileID: 1336975292}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -7370,6 +7371,10 @@ MonoBehaviour:
   normalSprite: {fileID: 21300000, guid: b4c4077816c18fd4085a639f4249292b, type: 3}
   pressedSprite: {fileID: 21300000, guid: 49518c416acfe2943b43b67b5db13374, type: 3}
   otherSprite: {fileID: 21300000, guid: 17a8cfdef726d9a45a875f501436a8ef, type: 3}
+  tap: 10
+  otherObject: {fileID: 1563403233}
+  otherAnimator: {fileID: 0}
+  showDuration: 1
 --- !u!50 &947050584
 Rigidbody2D:
   serializedVersion: 4
@@ -8468,7 +8473,7 @@ RectTransform:
   m_GameObject: {fileID: 1336975291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.153125, y: 0.153125, z: 0.153125}
+  m_LocalScale: {x: 0.18177083, y: 0.18177083, z: 0.18177083}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 947050582}
@@ -8480,13 +8485,12 @@ RectTransform:
   - {fileID: 1658223401}
   - {fileID: 1572888696}
   - {fileID: 1397118709}
-  - {fileID: 1563403234}
   m_Father: {fileID: 819472354}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1919.9999, y: 3407.9998}
+  m_SizeDelta: {x: 1919.9998, y: 3408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1336975293
 MonoBehaviour:
@@ -9034,12 +9038,12 @@ GameObject:
   - component: {fileID: 1563403236}
   - component: {fileID: 1563403235}
   m_Layer: 5
-  m_Name: Image
+  m_Name: HeartAnimation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1563403234
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9047,18 +9051,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563403233}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.22, y: 6.22, z: 6.22}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.000137544}
+  m_LocalScale: {x: 0.8760565, y: 0.8760565, z: 0.8760565}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1336975292}
+  m_Father: {fileID: 947050582}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0.13}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6, y: 506}
-  m_SizeDelta: {x: 100, y: 118.1}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -20.021904, y: 124.63829}
+  m_SizeDelta: {x: 10.61, y: -63.841125}
+  m_Pivot: {x: 0.39067528, y: 0.08050574}
 --- !u!95 &1563403235
 Animator:
   serializedVersion: 5
@@ -9072,7 +9076,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 6560dc496fee23843bf55ddf434193db, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -9385,9 +9389,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.000143677
+    y: 0.0012278855
     width: 1
-    height: 0.99971265
+    height: 0.9975442
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
