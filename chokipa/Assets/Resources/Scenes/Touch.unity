@@ -7463,7 +7463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalSprite: {fileID: 21300000, guid: b4c4077816c18fd4085a639f4249292b, type: 3}
-  pressedSprite: {fileID: 21300000, guid: 49518c416acfe2943b43b67b5db13374, type: 3}
+  pressedSprite: {fileID: 21300000, guid: e6f0f95df70d0914aa95771b5b49833c, type: 3}
   otherSprite: {fileID: 21300000, guid: 17a8cfdef726d9a45a875f501436a8ef, type: 3}
   tap: 10
   otherObject: {fileID: 1563403233}
@@ -8567,7 +8567,7 @@ RectTransform:
   m_GameObject: {fileID: 1336975291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15208334, y: 0.15208334, z: 0.15208334}
+  m_LocalScale: {x: 0.18177083, y: 0.18177083, z: 0.18177083}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 947050582}
@@ -8584,7 +8584,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1919.9999, y: 3408.0002}
+  m_SizeDelta: {x: 1920.0001, y: 3408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1336975293
 MonoBehaviour:
@@ -9483,9 +9483,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.0016345978
+    y: 0.0012278855
     width: 1
-    height: 0.9967308
+    height: 0.9975442
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
