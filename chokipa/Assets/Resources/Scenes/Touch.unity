@@ -5238,6 +5238,99 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &192290237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 192290238}
+  - component: {fileID: 192290241}
+  - component: {fileID: 192290240}
+  - component: {fileID: 192290239}
+  m_Layer: 5
+  m_Name: skin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &192290238
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192290237}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 947050582}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 58.726234}
+  m_SizeDelta: {x: -163.8065, y: 51.5222}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &192290239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192290237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c63612923009045a504557336daf09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageList:
+  - {fileID: 21300000, guid: 8de7908ea9ccee545b298958d5451d8d, type: 3}
+  - {fileID: 21300000, guid: 28ec5c3d910d5014e963ecda57349acf, type: 3}
+  - {fileID: 21300000, guid: 0ff63b4ccddcf5e49b1f7eb1c37f80ff, type: 3}
+  - {fileID: 21300000, guid: 94ada4ec6ea62954fa70490f2a73ec10, type: 3}
+--- !u!114 &192290240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192290237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 8de7908ea9ccee545b298958d5451d8d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &192290241
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192290237}
+  m_CullTransparentMesh: 1
 --- !u!1 &204308200
 GameObject:
   m_ObjectHideFlags: 0
@@ -7348,6 +7441,7 @@ RectTransform:
   m_LocalScale: {x: 7.1, y: 7.1, z: 7.1}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 192290238}
   - {fileID: 1563403234}
   m_Father: {fileID: 1336975292}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8473,7 +8567,7 @@ RectTransform:
   m_GameObject: {fileID: 1336975291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.18177083, y: 0.18177083, z: 0.18177083}
+  m_LocalScale: {x: 0.15208334, y: 0.15208334, z: 0.15208334}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 947050582}
@@ -8490,7 +8584,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1919.9998, y: 3408}
+  m_SizeDelta: {x: 1919.9999, y: 3408.0002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1336975293
 MonoBehaviour:
@@ -9389,9 +9483,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.0012278855
+    y: 0.0016345978
     width: 1
-    height: 0.9975442
+    height: 0.9967308
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
