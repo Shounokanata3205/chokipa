@@ -6100,7 +6100,7 @@ RectTransform:
   m_GameObject: {fileID: 520444843}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.36627626, y: 0.36627626, z: 0.36627626}
+  m_LocalScale: {x: 0.43777537, y: 0.43777537, z: 0.43777537}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1526247519}
@@ -6116,7 +6116,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 797.2124, y: 1415.0522}
+  m_SizeDelta: {x: 797.21246, y: 1415.0521}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &520444845
 MonoBehaviour:
@@ -8115,9 +8115,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.0016345978
+    y: 0.0012278855
     width: 1
-    height: 0.9967308
+    height: 0.9975442
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -9458,13 +9458,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950244886}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 0.664, z: 0}
-  m_LocalScale: {x: 0.08, y: 0.09, z: 1}
+  m_LocalRotation: {x: 0.0038074774, y: -0.12931383, z: 0.00049653224, w: 0.9915963}
+  m_LocalPosition: {x: 0.015, y: 0.77, z: 0.01}
+  m_LocalScale: {x: 0.067084655, y: 0.072785266, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 780152193}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.44, y: -14.86, z: 0}
 --- !u!212 &1950244889
 SpriteRenderer:
   m_ObjectHideFlags: 0
