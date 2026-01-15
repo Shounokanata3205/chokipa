@@ -35,6 +35,11 @@ public class TitleManager : MonoBehaviour
     {
         FadeManager.Instance.FadeOutToIn(SceneToCoin);
     }
+    public void OnTransitionToPlay()
+    {
+        FadeManager.Instance.FadeOutToIn(SceneToPlay);
+    }
+
 
 void SceneToMain()
     {
@@ -55,5 +60,9 @@ void SceneToMain()
     void SceneToCoin()
     {
         SceneManager.LoadScene("MiniGame");
+    }
+     void SceneToPlay()
+    {
+        SceneManager.LoadScene("play");
     }
 }
