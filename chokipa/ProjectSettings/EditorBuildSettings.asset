@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Resources/Scenes/room.unity
     guid: 5c1cdb092c682f3488478b10badd7f29
   - enabled: 1
+    path: Assets/Resources/Scenes/play.unity
+    guid: 9eb9a589cc45fb84196cafd6bc0b782a
+  - enabled: 1
     path: Assets/mini game/MiniGame.unity
     guid: 4dad38fb65f184b4eb516c09ec8764c4
   - enabled: 1
