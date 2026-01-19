@@ -19,7 +19,7 @@ public class main : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI Time,
         Money;
-    int Coin = 9999;
+    public static int Coin = 9999;
     int BackMenu = 0;
     int hour = System.DateTime.Now.Hour;
     int minute = System.DateTime.Now.Minute;
