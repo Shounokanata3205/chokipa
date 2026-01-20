@@ -83,4 +83,14 @@ public class PlayerController : MonoBehaviour
         scaler.x *= -1;
         transform.localScale = scaler;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //コインオブジェクトの消滅,コイン加算
+        if (collision.gameObject.CompareTag("Coin"))
+        {
+            main.Coin += 1;
+            Destroy(collision.gameObject);
+        }
+    }
 }
